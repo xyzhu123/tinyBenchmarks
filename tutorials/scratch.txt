@@ -1,0 +1,6 @@
+accelerate launch -m lm_eval --model hf \
+--model_args pretrained=LLM360/CrystalChat,dtype="bfloat16",trust_remote_code=True \
+    --tasks wmdp_bio,wmdp_cyber \
+    --batch_size 8 \
+    --log_samples \
+    --output_path /data/amos_zhu/lm-evaluation-harness/logs

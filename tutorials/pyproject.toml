@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "tutorials"
+version = "0.1.0"
+description = ""
+authors = ["Amos_Zhu <xzhu9839@usc.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = { git = "https://github.com/madkinsz/typer.git", rev = "b6efa2f" }
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
